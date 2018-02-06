@@ -10,7 +10,11 @@ function sumar()
 
 	numerouno = document.getElementById('numeroUno').value;	
 	numerodos = document.getElementById('numeroDos').value;
-	suma = (parseInt(numerouno)) + (parseInt(numerodos));	
+
+	numerouno = parseInt(numerouno);
+	numerodos = parseInt(numerodos);
+
+	suma = numerouno + numerodos;	
 	alert("El resultado de la suma es " + suma);	
 }
 
@@ -22,7 +26,11 @@ function restar()
 
 	numerouno = document.getElementById('numeroUno').value;	
 	numerodos = document.getElementById('numeroDos').value;
-	resta = (parseInt(numerouno)) - (parseInt(numerodos));	
+
+	numerouno = parseInt(numerouno);
+	numerodos = parseInt(numerodos);
+
+	resta = numerouno - numerodos;	
 	alert("El resultado de la resta es " + resta);
 }
 
@@ -34,7 +42,11 @@ function multiplicar()
 
 	numerouno = document.getElementById('numeroUno').value;	
 	numerodos = document.getElementById('numeroDos').value;
-	multi = (parseInt(numerouno)) * (parseInt(numerodos));
+
+	numerouno = parseInt(numerouno);
+	numerodos = parseInt(numerodos);
+
+	multi = numerouno * numerodos;
 	alert("El resultado de la multiplicación es " + multi);
 }
 
@@ -46,7 +58,11 @@ function dividir()
 
 	numerouno = document.getElementById('numeroUno').value;	
 	numerodos = document.getElementById('numeroDos').value;
-	division = (parseInt(numerouno)) / (parseInt(numerodos));	
+
+	numerouno = parseInt(numerouno);
+	numerodos = parseInt(numerodos);
+
+	division = numerouno / numerodos;	
 	alert("El resultado de la division es " + division);
 }
 
