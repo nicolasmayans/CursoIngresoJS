@@ -55,6 +55,7 @@ function Mostrar()
 	cantmujeres = 0;
 	varonesdesap = 0;
 	mejornota = 0;
+	promediomujeres = 0;
 
 	while(respuesta != "no")
 	{
@@ -95,17 +96,24 @@ function Mostrar()
 			nombremax = nombre;
 		}
 
+		if(sexo=="f")
+		{
+			promediomujeres = promediomujeres + nota;
+		}
+
 
 		sumanota = sumanota + nota;
 		alumnos = alumnos + 1;
 		respuesta = prompt("NO para salir");
 		promedio = sumanota / alumnos;
+		promediomujeres = promediomujeres / mujeres;
 	}
 	document.write("son " + alumnos + "alumnos con promedio de " + promedio);
 	document.write("cantidad de varones " + cantvarones);
 	document.write("cantidad de mujeres " + cantmujeres);
 	document.write("varones desaprobados " + varonesdesap);
 	document.write("La mejor nota la tiene el alumno " + nombremax);
+	document.write(" El promedio de las mujeres es " + promediomujeres);
 
 
 }
